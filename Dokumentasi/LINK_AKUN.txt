@@ -1,0 +1,18 @@
+DOKUMENTASI TAUTAN AKUN
+
+Nama lengkap : Muhammad Miftahul Muttaqien Billah
+
+1. GitHub
+   Username       : muhmiftahulmb-code
+   Profil         : https://github.com/muhmiftahulmb-code
+   Repository     : https://github.com/muhmiftahulmb-code/Komputasi-Numerik
+
+2. Google Colab
+   Halaman Colab  : https://colab.research.google.com/
+   Notebook SPL   : https://colab.research.google.com/github/muhmiftahulmb-code/Komputasi-Numerik/blob/main/01_SPL_3_Variabel/SPL_3_Variabel_Gauss_Jordan.ipynb
+   Notebook Bisection : https://colab.research.google.com/github/[USERNAME]/Komputasi-Numerik/blob/main/02_Nonlinear_Bisection/Persamaan_Nonlinear_Bisection.ipynb
+   Catatan: Colab diakses menggunakan akun Google. Tautan notebook di atas baru aktif setelah notebook diunggah ke repository dengan nama dan lokasi yang sesuai.
+
+3. LinkedIn
+   Profil         : https://www.linkedin.com/in/m-miftahul-m-b-348291450/
+

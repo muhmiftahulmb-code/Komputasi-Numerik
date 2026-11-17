@@ -1,0 +1,45 @@
+# Algoritma Penyelesaian Persamaan Nonlinear dengan Metode Bisection
+
+## 1. Tujuan
+Mencari pendekatan akar dari persamaan nonlinear satu variabel yang ditulis dalam bentuk `f(x) = 0`.
+
+## 2. Prinsip metode
+Metode Bisection menggunakan interval awal `[a, b]`. Fungsi harus kontinu pada interval tersebut dan nilai di kedua ujung interval harus mempunyai tanda yang berlawanan, yaitu `f(a) × f(b) < 0`. Titik tengah interval dihitung dengan rumus:
+
+```text
+c = (a + b) / 2
+```
+
+Akar berada pada salah satu bagian interval yang masih menunjukkan perubahan tanda.
+
+## 3. Langkah algoritma
+
+1. Mulai.
+2. Tentukan fungsi nonlinear `f(x)`, batas bawah `a`, batas atas `b`, toleransi, dan jumlah iterasi maksimum.
+3. Hitung `f(a)` dan `f(b)`.
+4. Periksa apakah salah satu batas merupakan akar. Jika ya, gunakan batas tersebut sebagai hasil.
+5. Periksa syarat `f(a) × f(b) < 0`. Jika tidak terpenuhi, interval belum mengurung akar dan metode dihentikan.
+6. Hitung titik tengah `c = (a + b) / 2`.
+7. Hitung nilai `f(c)` dan catat iterasi.
+8. Jika `|f(c)|` lebih kecil atau sama dengan toleransi, atau setengah lebar interval sudah lebih kecil atau sama dengan toleransi, hentikan iterasi.
+9. Jika `f(a) × f(c) < 0`, tetapkan batas atas baru `b = c`. Jika tidak, tetapkan batas bawah baru `a = c`.
+10. Ulangi langkah 6–9 sampai kriteria berhenti tercapai atau jumlah iterasi maksimum digunakan.
+11. Tampilkan pendekatan akar dan tabel iterasi.
+12. Selesai.
+
+## 4. Contoh data pengujian
+
+Gunakan:
+
+```text
+f(x) = x^3 - 4x - 9
+a = 2
+b = 3
+toleransi = 0.000001
+```
+
+Untuk interval tersebut, `f(2) = -9` dan `f(3) = 6`, sehingga terdapat perubahan tanda pada kedua ujung interval.
+
+## 5. Keterbatasan metode
+
+Metode Bisection standar digunakan untuk persamaan nonlinear satu variabel, bukan langsung untuk sistem nonlinear dengan beberapa variabel. Metode ini juga memerlukan fungsi kontinu dan interval yang mengurung akar. Hasilnya merupakan pendekatan numerik, bukan selalu akar eksak.
